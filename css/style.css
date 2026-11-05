@@ -1,0 +1,107 @@
+/*1. tipografia e efeitos - texto vazado usado no nome do cabeçalho. */
+.text-stroke {
+  -webkit-text-stroke: 1.5px #a1a1aa;
+  color: transparent;
+}
+.dark .text-stroke {
+  -webkit-text-stroke: 1.5px #e4e4e7;
+}
+
+
+/*2. cards - pequena elevação ao passar o mouse (serviços e projetos). */
+.card {
+  transition: transform 0.2s, border-color 0.2s;
+}
+.card:hover {
+  transform: translateY(-3px);
+}
+
+
+/*3. filtros de projetos*/
+.project-filter {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #e4e4e7;            
+  color: #27272a;                
+  transition: background-color 0.2s, color 0.2s;
+}
+.dark .project-filter {
+  background: #27272a;           
+  color: #e4e4e7;                 
+}
+.project-filter:hover {
+  background: #d4d4d8;            
+}
+.dark .project-filter:hover {
+  background: #3f3f46;            
+}
+
+/*botão selecionado (precisa vir depois para vencer as regras acima)*/
+.project-filter.is-active,
+.project-filter.is-active:hover {
+  background: #18181b;            
+  color: #ffffff;
+}
+.dark .project-filter.is-active,
+.dark .project-filter.is-active:hover {
+  background: #ffffff;
+  color: #18181b;
+}
+
+/*cards escondidos pelo filtro (garante que sumam mesmo com outras regras)*/
+.project-card[hidden] {
+  display: none !important;
+}
+
+
+/* 4. selos de status e estado vazio*/
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+}
+.status-done {                    /* projeto concluído */
+  background: rgba(16, 185, 129, 0.12);
+  color: #047857;
+}
+.dark .status-done {
+  color: #34d399;
+}
+.status-info {                    /* projeto publicado / contínuo */
+  background: #e4e4e7;
+  color: #3f3f46;
+}
+.dark .status-info {
+  background: #27272a;
+  color: #d4d4d8;
+}
+
+/*link de ação dentro dos cards de projeto */
+.project-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+/* 5. acessibilidade*/
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #10b981;    
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+  .card:hover {
+    transform: none;
+  }
+}
