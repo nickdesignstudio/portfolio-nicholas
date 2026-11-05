@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="pt-BR" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Nicholas Vieira Campos, estudante técnico em Informática buscando estágio em desenvolvimento web no Rio de Janeiro. Projetos de front-end, back-end (PHP e MySQL) e interfaces."
+    />
+    <title>Nicholas Vieira Campos — Desenvolvedor Web | Estágio no Rio de Janeiro</title>
+
+    <!-- Fontes (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS (CDN, versão fixa) e a configuração dele (js/config.js) -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="js/config.js"></script>
+
+    <!-- Estilos próprios do portfólio -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="bg-zinc-100 dark:bg-[#08080a] text-zinc-900 dark:text-zinc-100 font-sans min-h-screen p-3 sm:p-6 md:p-10"
+  >
+    <!-- Brilhos decorativos de fundo (não interativos) -->
+    <div
+      class="fixed -top-20 left-10 w-80 h-80 bg-violet-500/10 rounded-full blur-3xl pointer-events-none"
+    ></div>
+    <div
+      class="fixed bottom-0 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"
+    ></div>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main
+      id="inicio"
+      class="relative mx-auto w-full max-w-7xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-xl rounded-3xl sm:rounded-[2.5rem] border border-zinc-200 dark:border-zinc-800 shadow-2xl p-5 sm:p-8 md:p-12"
+    >
+      <!--Cabeçalho: disponibilidade, navegação e botão de tema-->
+    <header
+        class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-zinc-200 dark:border-zinc-800"
+      >
+        <div
+          class="text-xs font-medium rounded-full px-3 py-2 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700"
+        >
+          Disponível para estágio e oportunidades júnior · Rio de Janeiro, RJ
+        </div>
+        <nav
+          class="hidden md:flex flex-wrap gap-5 text-xs uppercase tracking-wide text-zinc-500"
+        >
+          <a href="#servicos">Especialidades</a><a href="#projetos">Projetos</a
+          ><a href="#trajetoria">Trajetória</a><a href="#contato">Contato</a>
+        </nav>
+        <button id="theme-toggle" type="button" class="rounded-full p-2 bg-zinc-100 dark:bg-zinc-800" aria-label="Alternar tema" aria-pressed="true">
+          <!-- Ícones inline: sol (aparece no escuro) e lua (aparece no claro) -->
+          <svg class="w-4 h-4 hidden dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="w-4 h-4 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+      </header>
+      <!-- ----- Apresentação (hero): nome, resumo e chamadas para ação ----- -->
+    <section class="py-10 sm:py-14">
+        <div
+          class="text-xs font-mono uppercase tracking-[.25em] text-emerald-500 mb-4"
+        >
+          Portfólio pessoal · 2026
+        </div>
+        <h1
+          class="font-display font-black uppercase tracking-tighter leading-[.9] text-5xl sm:text-7xl md:text-8xl"
+        >
+          <span class="text-stroke">NICHOLAS</span><br />VIEIRA CAMPOS
+        </h1>
+        <p class="font-mono text-xs sm:text-sm text-zinc-500 mt-5">
+          Estudante técnico em Informática · Front-end, PHP/MySQL e UI no Figma · Rio de Janeiro, RJ
+        </p>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-9">
+          <div
+            class="lg:col-span-7 rounded-2xl p-6 sm:p-8 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700"
+          >
+            <div class="text-xs font-mono uppercase text-emerald-500 mb-3">
+              /// O que eu faço
+            </div>
+            <h2 class="font-display text-2xl sm:text-3xl font-bold mb-4">
+              Crio experiências web juntando desenvolvimento e design.
+            </h2>
+            <p class="text-sm leading-7 text-zinc-600 dark:text-zinc-300">
+              Estou concluindo o Ensino Médio integrado ao Técnico em Informática no Colégio Realengo, com previsão de conclusão em dezembro de 2026. No meu TCC, desenvolvi o site de uma papelaria real, com catálogo, carrinho e painel administrativo em PHP, JavaScript e MySQL. Busco estágio em desenvolvimento web no Rio de Janeiro (presencial ou híbrido).
+            </p>
+            <div class="flex flex-wrap gap-3 mt-6">
+              <a
+                href="#projetos"
+                class="px-5 py-3 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 text-xs font-semibold"
+                >Conheça meus projetos ↗</a
+              ><a
+                href="#contato"
+                class="px-5 py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 text-xs font-semibold"
+                >Entre em contato</a
+              >
+            </div>
+          </div>
+          <div
+            class="lg:col-span-5 rounded-2xl bg-zinc-950 text-zinc-100 border border-zinc-800 p-5 font-mono"
+          >
+            <div
+              class="flex items-center justify-between text-xs text-zinc-500 mb-5"
+            >
+              <span>stack-atual.txt</span><span>● aprendendo e praticando</span>
+            </div>
+            <div class="space-y-4 text-sm">
+              <div>
+                <span class="text-cyan-400">FRONT-END</span>
+                <p class="mt-1 text-zinc-200">HTML · CSS · JavaScript</p>
+              </div>
+              <div>
+                <span class="text-emerald-400">BACK-END / DADOS</span>
+                <p class="mt-1 text-zinc-200">PHP · MySQL</p>
+              </div>
+              <div>
+                <span class="text-violet-400">DESIGN / FERRAMENTAS</span>
+                <p class="mt-1 text-zinc-200">
+                  Figma · Canva · Affinity · Git · GitHub
+                </p>
+              </div>
+              <div>
+                <span class="text-amber-400">PRÁTICA</span>
+                <p class="mt-1 text-zinc-200">
+                  Responsividade 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 01 · Áreas de atuação-->
+    <section
+        id="servicos"
+        class="pt-8 border-t border-zinc-200 dark:border-zinc-800"
+      >
+        <div
+          class="text-xs font-mono uppercase tracking-widest text-emerald-500 mb-2"
+        >
+          01 / Áreas de atuação
+        </div>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl uppercase">
+          Serviços & especialidades
+        </h2>
+        <p class="text-sm text-zinc-500 mt-3 max-w-2xl">
+          O que já consigo desenvolver com minha experiência atual em projetos
+          acadêmicos e autorais. A complexidade de cada entrega depende dos
+          requisitos.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 mt-7">
+          <article
+            class="card rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6 bg-zinc-50 dark:bg-zinc-800/40"
+          >
+            <div class="text-xs font-mono text-cyan-500 mb-3">FRONT-END</div>
+            <h3 class="font-display text-xl font-bold mb-3">
+              Interfaces e páginas responsivas
+            </h3>
+            <p class="text-sm leading-6 text-zinc-600 dark:text-zinc-300">
+              Construção de páginas com HTML, CSS e JavaScript, com atenção à
+              estrutura, apresentação em diferentes telas e interações básicas.
+            </p>
+            <ul class="mt-4 text-sm text-zinc-500 space-y-2">
+              <li>— Landing pages e sites institucionais</li>
+              <li>— Páginas para restaurantes, barbearias e academias</li>
+              <li>— Navegação, botões e interações básicas</li>
+              <li>— Layout responsivo</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mt-5 text-xs font-mono">
+              <span class="tag">HTML</span><span>CSS</span
+              ><span>JavaScript</span>
+            </div>
+          </article>
+          <article
+            class="card rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6 bg-zinc-50 dark:bg-zinc-800/40"
+          >
+            <div class="text-xs font-mono text-emerald-500 mb-3">BACK-END</div>
+            <h3 class="font-display text-xl font-bold mb-3">
+              Funcionalidades com PHP e MySQL
+            </h3>
+            <p class="text-sm leading-6 text-zinc-600 dark:text-zinc-300">
+              Implementação de recursos no servidor e integração com banco de dados, aplicados no site de uma empresa real no meu TCC.
+            </p>
+            <ul class="mt-4 text-sm text-zinc-500 space-y-2">
+              <li>— Processamento de formulários</li>
+              <li>— Cadastro e consulta de informações</li>
+              <li>— Login e cadastro de usuários</li>
+              <li>— Catálogo de produtos, carrinho e painel administrativo</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mt-5 text-xs font-mono">
+              <span>PHP</span><span>MySQL</span>
+            </div>
+          </article>
+          <article
+            class="card rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6 bg-zinc-50 dark:bg-zinc-800/40"
+          >
+            <div class="text-xs font-mono text-violet-500 mb-3">UI / UX</div>
+            <h3 class="font-display text-xl font-bold mb-3">
+              Wireframes e protótipos
+            </h3>
+            <p class="text-sm leading-6 text-zinc-600 dark:text-zinc-300">
+              Organização visual de páginas e criação de wireframes e protótipos
+              no Figma, considerando clareza, hierarquia de informação e
+              facilidade de uso.
+            </p>
+            <ul class="mt-4 text-sm text-zinc-500 space-y-2">
+              <li>— Wireframes de páginas</li>
+              <li>— Protótipos de interface</li>
+              <li>— Noções de usabilidade</li>
+              <li>— Apoio visual para desenvolvimento web</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mt-5 text-xs font-mono">
+              <span>Figma</span><span>Canva</span><span>Affinity</span>
+            </div>
+          </article>
+          <article
+            class="card rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6 bg-zinc-50 dark:bg-zinc-800/40"
+          >
+            <div class="text-xs font-mono text-amber-500 mb-3">
+              FULL STACK · PROJETOS DE ESTUDO
+            </div>
+            <h3 class="font-display text-xl font-bold mb-3">
+              Páginas conectadas a dados
+            </h3>
+            <p class="text-sm leading-6 text-zinc-600 dark:text-zinc-300">
+              Combinação de interface, PHP e MySQL em projetos que exigem cadastro, consulta e organização de informações, como o e-commerce do meu TCC. Sigo ampliando minha prática a cada projeto.
+            </p>
+            <ul class="mt-4 text-sm text-zinc-500 space-y-2">
+              <li>— Integração de páginas PHP e banco</li>
+              <li>— Estrutura de pequenos catálogos</li>
+              <li>— Organização básica do código</li>
+              <li>— Versionamento com Git e GitHub</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mt-5 text-xs font-mono">
+              <span>HTML/CSS</span><span>PHP</span><span>MySQL</span
+              ><span>Git</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      
+    <section
+        id="projetos"
+        class="pt-12 mt-12 border-t border-zinc-200 dark:border-zinc-800"
+      >
+        <div
+          class="text-xs font-mono uppercase tracking-widest text-emerald-500 mb-2"
+        >
+          02 / Seleção de trabalhos
+        </div>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl uppercase">
+          Projetos
+        </h2>
+        <p class="text-sm text-zinc-500 mt-3 max-w-2xl">
+          Projetos acadêmicos e autorais, incluindo um e-commerce desenvolvido para uma empresa real. Os projetos conceituais ou fictícios estão identificados.
+        </p>
+        <div
+          id="project-filters"
+          class="flex flex-wrap gap-2 mt-6"
+          role="group"
+          aria-label="Filtrar projetos por categoria"
+        >
+          <!-- data-filter deve ser igual a uma categoria em data-category dos cards -->
+          <button type="button" class="project-filter is-active" data-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="project-filter" data-filter="frontend" aria-pressed="false">Front-end</button>
+          <button type="button" class="project-filter" data-filter="fullstack" aria-pressed="false">Full stack</button>
+          <button type="button" class="project-filter" data-filter="academico" aria-pressed="false">Acadêmico</button>
+          <button type="button" class="project-filter" data-filter="autoral" aria-pressed="false">Autoral</button>
+        </div>
+        <!-- Contador atualizado pelo js/script.js -->
+        <p id="project-count" class="text-xs font-mono text-zinc-500 mt-3 mb-5" aria-live="polite"></p>
+        <div class="grid md:grid-cols-2 gap-4" id="project-grid">
+          <article
+            data-category="frontend autoral"
+            class="project-card card rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6"
+          >
+            <div class="text-xs font-mono text-cyan-500">
+              SITE INSTITUCIONAL · FRONT-END
+            </div>
+            <h3 class="font-display text-xl font-bold mt-3">
+              Quintal do Rio — uma presença digital acolhedora
+            </h3>
+            <p class="text-sm text-zinc-500 leading-6 mt-2">
+              Site conceitual para restaurante, com foco em apresentar o espaço
+              e organizar as informações em uma experiência de navegação
+              simples.
+            </p>
+            <div class="text-xs font-mono mt-4">HTML · CSS · JavaScript</div>
+            <a
+              class="inline-flex mt-5 text-sm font-semibold underline underline-offset-4"
+              href="https://nickdesignstudio.github.io/quintal-do-rio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver projeto ↗</a
+            >
+          </article>
+          <article
+            data-category="frontend autoral"
+            class="project-card card rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6"
+          >
+            <div class="text-xs font-mono text-cyan-500">
+              LANDING PAGE · FRONT-END
+            </div>
+            <h3 class="font-display text-xl font-bold mt-3">
+              BarberCRM — uma landing page para barbearias
+            </h3>
+            <p class="text-sm text-zinc-500 leading-6 mt-2">
+              Landing page de um SaaS fictício para retenção de clientes de barbearias, com seções de problema, como funciona, painel de exemplo, recursos, planos e FAQ. Dados e depoimentos são ilustrativos.
+            </p>
+            <div class="text-xs font-mono mt-4">HTML · CSS · JavaScript</div>
+            <a
+              class="inline-flex mt-5 text-sm font-semibold underline underline-offset-4"
+              href="https://nickdesignstudio.github.io/barbercrm-landing-page/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver projeto ↗</a
+            >
+          </article>
+          <article
+            data-category="frontend autoral"
+            class="project-card card rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6"
+          >
+            <div class="text-xs font-mono text-cyan-500">
+              LANDING PAGE · FRONT-END
+            </div>
+            <h3 class="font-display text-xl font-bold mt-3">
+              Vértice Athletic Club — apresentação de academia
+            </h3>
+            <p class="text-sm text-zinc-500 leading-6 mt-2">
+              Landing page fictícia para uma academia, desenvolvida para
+              exercitar identidade visual, estrutura de conteúdo e divulgação de
+              serviços.
+            </p>
+            <div class="text-xs font-mono mt-4">HTML · CSS · JavaScript</div>
+            <a
+              class="inline-flex mt-5 text-sm font-semibold underline underline-offset-4"
+              href="https://nickdesignstudio.github.io/Academia-V-rtice-Athletic-Club---Landing-Page/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver projeto ↗</a
+            >
+          </article>
+          <!-- Projeto 4 · TCC: e-commerce para empresa real (CONCLUÍDO) -->
+          <article data-category="fullstack academico" class="project-card card rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6">
+            <div class="text-xs font-mono text-amber-500">
+              E-COMMERCE · TCC · EMPRESA REAL
+            </div>
+            <h3 class="font-display text-xl font-bold mt-3">
+              Papelaria Entrelinhas — e-commerce para uma empresa real
+            </h3>
+            <p class="text-sm text-zinc-500 leading-6 mt-2">
+              Site do cliente desenvolvido por mim no TCC: interface a partir do
+              design fornecido pela empresa, catálogo, carrinho, cadastro e
+              login, e painel administrativo para gerenciar produtos, pedidos,
+              categorias, avaliações e usuários.
+            </p>
+            <div class="text-xs font-mono mt-4">
+              HTML · CSS · JavaScript · PHP · MySQL
+            </div>
+            <div class="flex flex-wrap items-center gap-4 mt-5">
+              <span class="status-badge status-done">Concluído</span>
+              <a
+                class="project-link"
+                href="https://github.com/nickdesignstudio/entrelinhas-ecommerce"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver código ↗</a
+              >
+              <a
+                class="project-link"
+                href="https://vertex-dev.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver no portfólio da equipe ↗</a
+              >
+            </div>
+          </article>
+
+          <!-- Projeto 5 · TCC em grupo (CONCLUÍDO) -->
+          <article data-category="fullstack academico" class="project-card card rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6">
+            <div class="text-xs font-mono text-violet-500">
+              PROJETO ACADÊMICO · TCC EM GRUPO
+            </div>
+            <h3 class="font-display text-xl font-bold mt-3">
+              Vertex Desenvolvimento Web — TCC em equipe
+            </h3>
+            <p class="text-sm text-zinc-500 leading-6 mt-2">
+              Projeto de conclusão do curso técnico, realizado em grupo, com a
+              proposta fictícia de desenvolver soluções web para pequenos
+              negócios. Minha participação envolve design e programação, e fui
+              o responsável pelo site da Papelaria Entrelinhas.
+            </p>
+            <div class="text-xs font-mono mt-4">
+              HTML · CSS · JavaScript · PHP · MySQL
+            </div>
+            <div class="flex flex-wrap items-center gap-4 mt-5">
+              <span class="status-badge status-done">Concluído</span>
+              <a
+                class="project-link"
+                href="https://vertex-dev.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver projeto ↗</a
+              >
+            </div>
+          </article>
+
+          <!-- Projeto 6 · Este portfólio -->
+          <article data-category="frontend autoral" class="project-card card rounded-2xl border border-zinc-200 dark:border-zinc-700 p-6">
+            <div class="text-xs font-mono text-cyan-500">
+              PORTFÓLIO · PROJETO PESSOAL
+            </div>
+            <h3 class="font-display text-xl font-bold mt-3">
+              Meu portfólio — evolução em desenvolvimento web
+            </h3>
+            <p class="text-sm text-zinc-500 leading-6 mt-2">
+              Este próprio site reúne meus projetos, tecnologias e aprendizados.
+              Ele acompanha minha evolução como estudante técnico e
+              desenvolvedor web em formação.
+            </p>
+            <div class="text-xs font-mono mt-4">
+              HTML · CSS (Tailwind) · JavaScript · Git/GitHub
+            </div>
+            <div class="flex flex-wrap items-center gap-4 mt-5">
+              <span class="status-badge status-info">Publicado</span>
+            </div>
+          </article>
+
+          <!-- Mensagem exibida quando um filtro não tem projetos -->
+          <p id="project-empty" class="md:col-span-2 text-sm text-zinc-500" hidden>
+            Nenhum projeto nesta categoria por enquanto.
+          </p>
+        </div>
+      </section>
+      <!-- ----- 03 · Experiência e trajetória ----- -->
+    <section
+        id="trajetoria"
+        class="pt-12 mt-12 border-t border-zinc-200 dark:border-zinc-800"
+      >
+        <div
+          class="text-xs font-mono uppercase tracking-widest text-emerald-500 mb-2"
+        >
+          03 / Caminho até aqui
+        </div>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl uppercase">
+          Experiência & trajetória
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 mt-7">
+          <div>
+            <h3 class="font-display text-2xl font-bold mb-3">
+              Aprendizado construído etapa por etapa.
+            </h3>
+            <p class="text-sm leading-7 text-zinc-600 dark:text-zinc-300">
+              Meu caminho na área começou em 2024, quando entrei no curso
+              técnico sem saber muito bem como transformar o interesse por
+              informática em habilidades práticas. Ao longo dos anos, fui
+              entendendo melhor as ferramentas, os conceitos e como usá-los em
+              projetos reais de estudo. Hoje consigo construir páginas,
+              trabalhar com funcionalidades básicas de servidor e banco de dados
+              e prototipar interfaces — e continuo aprendendo.
+            </p>
+            <p class="text-xs text-zinc-500 mt-4">
+              Minha experiência até aqui é acadêmica e autoral, incluindo um projeto para uma empresa real. Estou buscando minha primeira oportunidade profissional na área.
+            </p>
+          </div>
+          <div
+            class="space-y-5 border-l-2 border-zinc-200 dark:border-zinc-700 pl-5"
+          >
+            <div>
+              <div class="text-xs font-mono text-emerald-500">
+                2024 · 1º ANO
+              </div>
+              <h3 class="font-bold mt-1">Primeiro contato e fundamentos</h3>
+              <p class="text-sm text-zinc-500 mt-1 leading-6">
+                Comecei praticamente do zero. Foi uma fase de adaptação,
+                descoberta das ferramentas e construção dos fundamentos de
+                informática e desenvolvimento.
+              </p>
+            </div>
+            <div>
+              <div class="text-xs font-mono text-cyan-500">2025 · 2º ANO</div>
+              <h3 class="font-bold mt-1">Mais contexto e autonomia</h3>
+              <p class="text-sm text-zinc-500 mt-1 leading-6">
+                Passei a entender melhor a função das tecnologias e como cada
+                parte se conecta. Com mais clareza sobre o processo, comecei a
+                aplicar o que aprendia em atividades e projetos.
+              </p>
+            </div>
+            <div>
+              <div class="text-xs font-mono text-violet-500">2026 · 3º ANO</div>
+              <h3 class="font-bold mt-1">
+                Prática, projetos e próximos passos
+              </h3>
+              <p class="text-sm text-zinc-500 mt-1 leading-6">
+                Hoje desenvolvo páginas e landing pages, trabalho com PHP e MySQL e prototipo interfaces. No TCC, desenvolvi o site de uma papelaria real, do catálogo ao painel administrativo. Estou concluindo o Ensino Médio e o Técnico em
+                Informática no Colégio Realengo, com previsão de conclusão em
+                dezembro de 2026.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 04 · Tecnologias -->
+    <section
+        id="tecnologias"
+        class="pt-12 mt-12 border-t border-zinc-200 dark:border-zinc-800"
+      >
+        <div
+          class="text-xs font-mono uppercase tracking-widest text-emerald-500 mb-2"
+        >
+          04 / Ferramentas de trabalho
+        </div>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl uppercase">
+          Tecnologias que utilizo
+        </h2>
+        <p class="text-sm text-zinc-500 mt-3">
+          Lista baseada no que já pratiquei em projetos. Não inclui tecnologias
+          que ainda não fazem parte da minha experiência prática.
+        </p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-7">
+          <div
+            class="rounded-xl p-5 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700"
+          >
+            <h3 class="font-bold mb-3">Front-end</h3>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span>HTML</span><span>CSS</span><span>JavaScript básico</span
+              ><span>Responsividade</span><span>Tailwind CSS (estudos)</span>
+            </div>
+          </div>
+          <div
+            class="rounded-xl p-5 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700"
+          >
+            <h3 class="font-bold mb-3">Back-end e dados</h3>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span>PHP</span><span>MySQL</span
+              ><span>Modelagem básica de banco</span>
+            </div>
+          </div>
+          <div
+            class="rounded-xl p-5 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700"
+          >
+            <h3 class="font-bold mb-3">Design</h3>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span>Figma</span><span>Canva</span><span>Affinity</span
+              ><span>Wireframes</span>
+            </div>
+          </div>
+          <div
+            class="rounded-xl p-5 bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700"
+          >
+            <h3 class="font-bold mb-3">Ferramentas e práticas</h3>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span>Git</span><span>GitHub</span
+              ><span>Lógica de programação</span
+              ><span>Noções de UX/usabilidade</span
+              ><span>Consumo básico de APIs</span>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- 05 · Contato-->
+    <section
+        id="contato"
+        class="pt-12 mt-12 border-t border-zinc-200 dark:border-zinc-800"
+      >
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div>
+            <div
+              class="text-xs font-mono uppercase tracking-widest text-emerald-500 mb-2"
+            >
+              05 / Contato
+            </div>
+            <h2
+              class="font-display font-extrabold text-3xl sm:text-4xl uppercase"
+            >
+              Vamos conversar?
+            </h2>
+            <p class="text-sm leading-7 text-zinc-500 mt-4">
+              Estou buscando estágio e oportunidades júnior em desenvolvimento web no Rio de Janeiro (presencial ou híbrido), com interesse em front-end, back-end e interfaces. Se sua equipe tem uma vaga ou quer conversar sobre um projeto, me escreva.
+            </p>
+            <a
+              href="mailto:nicholas20.vcampos@gmail.com"
+              class="inline-flex mt-6 px-5 py-3 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 text-xs font-semibold"
+              >nicholas20.vcampos@gmail.com ↗</a
+            >
+          </div>
+          <div class="space-y-3">
+            <a
+              class="flex items-center justify-between p-4 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-zinc-400"
+              href="https://www.linkedin.com/in/nicholas-vieira-759499296/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span>LinkedIn</span
+              ><span class="text-xs text-zinc-500"
+                >/in/nicholasvieira-759499296 ↗</span
+              ></a
+            ><a
+              class="flex items-center justify-between p-4 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-zinc-400"
+              href="https://github.com/nickdesignstudio"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span>GitHub</span
+              ><span class="text-xs text-zinc-500">@nickdesignstudio ↗</span></a
+            >
+          </div>
+        </div>
+        <div
+          class="mt-10 pt-5 border-t border-zinc-200 dark:border-zinc-800 flex flex-wrap justify-between gap-3 text-xs text-zinc-500"
+        >
+          <span>Nicholas Vieira Campos · Desenvolvedor Web em formação</span
+          ><a href="#inicio">Voltar ao topo ↑</a>
+        </div>
+      </section>
+    </main>
+    <!-- Interações: tema claro/escuro e filtros de projetos -->
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
